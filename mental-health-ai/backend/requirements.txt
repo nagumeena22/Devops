@@ -1,0 +1,10 @@
+fastapi==0.95.2
+uvicorn==0.22.0
+transformers==4.34.0
+torch==2.2.0
+safetensors==0.4.1
+python-dotenv==1.0.0
+pymongo==4.4.0
+PyJWT==2.8.1
+bcrypt==4.1.2
+python-multipart==0.0.6
