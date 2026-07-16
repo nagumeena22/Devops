@@ -1,22 +1,65 @@
 *{margin:0;padding:0;box-sizing:border-box}
 .profile-page{padding:32px;background:linear-gradient(135deg,#f9fafb 0%,#f3f4f6 100%);min-height:100vh}
 .profile-card{max-width:800px;margin:0 auto;background:#fff;border-radius:16px;box-shadow:0 10px 40px rgba(0,0,0,0.08);overflow:hidden}
-.profile-header{display:flex;gap:24px;align-items:center;padding:32px;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff}
-.avatar{width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,0.2);color:#fff;display:flex;align-items:center;justify-content:center;font-size:40px;font-weight:700;border:3px solid rgba(255,255,255,0.3)}
+
+/* Welcome Section */
+.profile-welcome-section{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:40px 32px;text-align:center}
+.welcome-icon{font-size:48px;margin-bottom:12px;display:block}
+.welcome-title{font-size:32px;font-weight:700;margin-bottom:8px}
+.welcome-subtitle{font-size:16px;opacity:0.95;margin-bottom:8px;text-transform:uppercase;letter-spacing:1px;font-weight:600}
+.welcome-description{font-size:14px;opacity:0.85;margin-bottom:0}
+
+/* Profile Header */
+.profile-header{display:flex;gap:24px;align-items:center;padding:32px;background:#f9fafb;color:#1f2937}
+.avatar{width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;display:flex;align-items:center;justify-content:center;font-size:40px;font-weight:700;border:3px solid #e5e7eb}
 .profile-header h2{font-size:28px;margin-bottom:8px}
-.muted{color:rgba(255,255,255,0.9);font-size:14px}
+.profile-header p{margin:0}
+.muted{color:#6b7280;font-size:14px}
+
 .profile-body{padding:32px}
 .profile-body h3{font-size:18px;margin-bottom:16px;color:#1f2937;border-bottom:2px solid #e5e7eb;padding-bottom:12px}
 .profile-body ul{list-style:none}
 .profile-body li{padding:14px 0;color:#4b5563;border-bottom:1px solid #f3f4f6;display:flex;justify-content:space-between}
 .profile-body li strong{color:#1f2937;font-weight:600}
+
+/* Role Badge */
+.role-badge{display:inline-block;padding:4px 12px;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;border-radius:20px;font-size:12px;font-weight:600;text-transform:uppercase}
+
+/* Role Specific Info */
+.role-specific-info{margin-top:24px;padding:24px;background:#f0f9ff;border-radius:12px;border-left:4px solid #667eea}
+.role-specific-info h3{color:#667eea;margin-bottom:16px;border-bottom-color:#bfdbfe}
+.role-specific-info li{color:#1e40af;border-bottom-color:#e0e7ff}
+.role-specific-info li strong{color:#1e3a8a}
+
 .resources{margin-top:24px;background:linear-gradient(135deg,#fef3c7,#fcd34d);padding:20px;border-radius:12px;border-left:4px solid #f59e0b}
 .resources h3{color:#b45309;margin-bottom:12px}
 .resources ul{list-style:none}
 .resources li{padding:10px 0;color:#92400e;border-bottom:1px solid rgba(245,158,11,0.2)}
 .resources li:last-child{border:none}
+
 .profile-actions{display:flex;gap:12px;margin-top:28px;padding-top:20px;border-top:2px solid #e5e7eb}
 .logout-button{background:linear-gradient(135deg,#ef4444,#dc2626);color:#fff;padding:12px 24px;border:none;border-radius:8px;font-weight:600;cursor:pointer;transition:all 0.2s;flex:1}
 .logout-button:hover{transform:translateY(-2px);box-shadow:0 8px 16px rgba(239,68,68,0.3)}
-.back-button{background:#e5e7eb;color:#1f2937;padding:12px 24px;border:none;border-radius:8px;font-weight:600;cursor:pointer;transition:all 0.2s;flex:1}
+.back-button{background:#e5e7eb;color:#1f2937;padding:12px 24px;border:none;border-radius:8px;font-weight:600;cursor:pointer;transition:all 0.2s;flex:1;text-decoration:none;display:flex;align-items:center;justify-content:center}
 .back-button:hover{background:#d1d5db}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .profile-page {
+    padding:16px;
+  }
+  .profile-header {
+    flex-direction:column;
+    text-align:center;
+    padding:24px 16px;
+  }
+  .welcome-title {
+    font-size:24px;
+  }
+  .profile-body {
+    padding:16px;
+  }
+  .profile-actions {
+    flex-direction:column;
+  }
+}

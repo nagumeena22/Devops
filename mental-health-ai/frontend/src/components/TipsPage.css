@@ -1,0 +1,99 @@
+.tips-page {
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+.tips-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.tips-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 1rem 0;
+  line-height: 1.1;
+}
+
+.tips-hero p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 620px;
+}
+
+.tips-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.tip-card {
+  background: var(--surface);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+}
+
+.tip-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.tip-card p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.tips-footer {
+  max-width: 1200px;
+  margin: 4rem auto 0;
+  padding: 2rem 1.5rem 0;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tips-footer p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  max-width: 700px;
+}
+
+.small-button {
+  padding: 0.75rem 1.5rem;
+  background: var(--text-main);
+  color: white;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+  .tips-hero {
+    text-align: center;
+  }
+  .tips-hero p {
+    margin: 0 auto;
+  }
+  .tips-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}

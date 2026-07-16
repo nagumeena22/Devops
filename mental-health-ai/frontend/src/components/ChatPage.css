@@ -1,0 +1,129 @@
+.chat-page {
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+.chat-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.chat-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 1rem 0;
+  line-height: 1.1;
+}
+
+.chat-hero p {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 620px;
+}
+
+.chat-panel {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.chat-window {
+  background: var(--surface);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: var(--shadow-lg);
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.chat-message {
+  max-width: 80%;
+  padding: 1.25rem 1.5rem;
+  border-radius: 1.25rem;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.chat-message.assistant {
+  background: #f1f5f9;
+  color: var(--text-main);
+  align-self: flex-start;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.chat-message.user {
+  background: var(--primary);
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 0.25rem;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.chat-author {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  opacity: 0.7;
+}
+
+.chat-input-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 2rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.chat-input-row textarea {
+  flex-grow: 1;
+  resize: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.chat-input-row textarea:focus {
+  border-color: var(--primary);
+}
+
+.send-button {
+  padding: 0 2rem;
+  background: var(--accent-gradient);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.send-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(99, 102, 241, 0.2);
+}
+
+@media (max-width: 800px) {
+  .chat-hero {
+    text-align: center;
+  }
+  .chat-hero p {
+    margin: 0 auto;
+  }
+  .chat-input-row {
+    flex-direction: column;
+  }
+  .send-button {
+    padding: 1rem;
+  }
+}

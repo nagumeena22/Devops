@@ -8,3 +8,5 @@ build/
 /.vscode/
 frontend/node_modules/
 backend/node_modules/
+backend/ai/text_model/model.safetensors
+
