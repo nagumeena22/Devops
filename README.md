@@ -13,4 +13,5 @@ containers:
 
 docker desktop images:
 
-<img width="1902" height="915" alt="Screenshot 2026-07-17 100527" src="https://github.com/user-attachments/assets/adbd1f4d-5a39-4698-83c2-6e3c1d67a9c4" />
+![Uploading Screenshot (761).png…]()
+
